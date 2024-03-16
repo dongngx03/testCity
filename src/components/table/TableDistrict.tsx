@@ -24,7 +24,7 @@ const TableDistrict = ({ value }: Iprops) => {
                 <tbody>
                     {
                         value.results.map((e: any, index) => (
-                            <tr className="border">
+                            <tr className="border" key={index}>
                                 <td className="border text-center p-3">{index + 1}</td>
                                 <td className="border text-center p-3">{e.district_id}</td>
                                 <td className="border text-center p-3">
